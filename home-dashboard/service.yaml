@@ -6,8 +6,10 @@ metadata:
 spec:
   selector:
     app: home-dashboard
+  type: LoadBalancer
   ports:
     - name: web
       port: 3000
       protocol: TCP
       targetPort: 3000
+      nodePort: 30008
