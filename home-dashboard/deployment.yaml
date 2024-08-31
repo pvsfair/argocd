@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: home-dashboard
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: home-dashboard
+  template:
+    metadata:
+      labels:
+        app: home-dashboard
+    spec:
+      containers:
+        - name: home-dashboard
+          image: pvsfair/home-dashboard:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 3000
+          readinessProbe:
+            httpGet:
+              port: 3000
+              path: /
+          
