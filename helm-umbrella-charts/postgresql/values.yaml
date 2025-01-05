@@ -3,9 +3,10 @@ postgresql:
     enabled: false
   metrics:
     enabled: true
-  service:
-    type: LoadBalancer
-    ports:
-      postgresql: 5432
-    nodePorts:
-      postgresql: "54321"
+  primary:
+    service:
+      type: LoadBalancer
+      ports:
+        postgresql: 5432
+      nodePorts:
+        postgresql: "54321"
