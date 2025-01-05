@@ -9,4 +9,4 @@ postgresql:
       ports:
         postgresql: 5432
       nodePorts:
-        postgresql: "54321"
+        postgresql: "30005"
