@@ -1,2 +1,2 @@
-hello-world:
-  replicaCount: 1
+postgresql:
+  tls.enabled: false
