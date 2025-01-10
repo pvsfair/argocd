@@ -9,6 +9,6 @@ spec:
   ports:
     - name: hello-world
       protocol: TCP
-      port: 82
+      port: 80
       targetPort: 80
-      nodePort: 30009
+  loadBalancerIP: 192.168.1.30
