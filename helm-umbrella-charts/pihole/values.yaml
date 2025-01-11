@@ -1,10 +1,10 @@
 pihole:
   dnsmasq:
     customDnsEntries:
-      - address=/longhorn/192.168.1.22
+      - address=longhorn,192.168.1.22
   
-    customCnameEntries:
-      - cname=longhorn.local,longhorn
+    # customCnameEntries:
+    #   - cname=longhorn.local,longhorn
 
   persistentVolumeClaim:
     enabled: true
