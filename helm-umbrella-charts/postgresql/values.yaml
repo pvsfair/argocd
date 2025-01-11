@@ -2,7 +2,7 @@ postgresql:
   tls:
     enabled: false
   metrics:
-    enabled: true
+    enabled: false
   primary:
     service:
       type: LoadBalancer
