@@ -1,7 +1,12 @@
 pihole:
   dnsmasq:
     customDnsEntries:
-      - address=/test.local/192.168.1.21
+      - address=/internal.local/192.168.1.20
+      - address=/argocd.local/192.168.1.21
+      - address=/longhorn.local/192.168.1.22
+      - address=/postgresql.local/192.168.1.23
+      - address=/redis.local/192.168.1.24
+      - address=/pi.hole/192.168.1.25
   
     # customCnameEntries:
     #   - cname=longhorn.local,longhorn
