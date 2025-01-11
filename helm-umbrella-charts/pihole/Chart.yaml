@@ -1,0 +1,14 @@
+apiVersion: v2
+name: pihole
+description: Umbrella pihole chart
+
+type: application
+
+version: 0.1.0
+
+appVersion: "1.0"
+
+dependencies:
+  - name: pihole
+    version: 16.3.5
+    repository: https://mojo2600.github.io/pihole-kubernetes/
