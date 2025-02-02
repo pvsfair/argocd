@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Configmap
+kind: ConfigMap
 metadata:
   name: home-library-configmap
   namespace: default
