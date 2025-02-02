@@ -4,4 +4,4 @@ metadata:
   name: home-library-configmap
   namespace: default
 data:
-  DATABASE_URL: "postgresql://postgres:admin@postgresql.local/biblioteca"
+  DATABASE_URL: "postgresql://postgres:admin@postgresql.postgresql/biblioteca"
