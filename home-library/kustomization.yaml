@@ -6,4 +6,4 @@ resources:
 - service.yaml
 images:
 - name: pvsfair/home-library
-  newTag: "1738504689"
+  newTag: "1738513468"
