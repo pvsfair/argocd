@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: home-library
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: home-library
+  template:
+    metadata:
+      labels:
+        app: home-library
+    spec:
+      containers:
+        - name: home-library
+          image: pvsfair/home-library:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 3000
+          readinessProbe:
+            httpGet:
+              port: 3000
+              path: /
+          
