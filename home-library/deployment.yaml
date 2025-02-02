@@ -18,9 +18,12 @@ spec:
           image: pvsfair/home-library:latest
           imagePullPolicy: Always
           ports:
-          - containerPort: 3000
+            - containerPort: 3000
           readinessProbe:
             httpGet:
               port: 3000
               path: /
-          
+          envFrom:
+            - configMapRef:
+                name: home-library-configmap
+                optional: false

@@ -8,7 +8,7 @@ pihole:
       - address=/redis.local/192.168.1.24
       - address=/pi.hole/192.168.1.25
       - address=/lib.local/192.168.1.31
-  
+
     # customCnameEntries:
     #   - cname=longhorn.local,longhorn
 
